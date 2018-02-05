@@ -22,7 +22,7 @@ class AVChattingPlayerTests: XCTestCase {
   }
 
 
-  func testInitialize() {
+  func testSubtitlesParser() {
     // Test Initialization of AVPlayer & SubtitlesParser
     
     // == Initialize SubtitlesParser ====================================================================================================
@@ -103,6 +103,10 @@ WEBVTT
     XCTAssertEqual(parser3.readNextSubtitles(to: 50.0*60.0).count, 2)   // Read subtitles from 30 minutes to 50 minutes
     XCTAssertEqual(parser3.readNextSubtitles(to: 60.0*60.0).count, 2)   // Read subtitles from 50 minutes to 60 minutes
     XCTAssertEqual(parser3.readNextSubtitles(to: 80.0*60.0).count, 2)   // Read subtitles from 60 minutes to 80 minutes
+  }
+  
+  func testAVChattingPlayerView() {
+    let chattingPlayerView: AVChattingPlayerView = AVChattingPlayerView(frame: .zero)
   }
 
   func testPerformanceExample() {

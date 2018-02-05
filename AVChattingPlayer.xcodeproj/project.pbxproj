@@ -17,6 +17,9 @@
 		9B14AE6D202819F4006804B7 /* SubtitlesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B14AE6C202819F4006804B7 /* SubtitlesParser.swift */; };
 		9B14AE6E202819F4006804B7 /* SubtitlesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B14AE6C202819F4006804B7 /* SubtitlesParser.swift */; };
 		9B14AE6F202819F4006804B7 /* SubtitlesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B14AE6C202819F4006804B7 /* SubtitlesParser.swift */; };
+		9B14AE7120283E48006804B7 /* AVChattingPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B14AE7020283E48006804B7 /* AVChattingPlayerView.swift */; };
+		9B14AE7220283E48006804B7 /* AVChattingPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B14AE7020283E48006804B7 /* AVChattingPlayerView.swift */; };
+		9B14AE7320283E48006804B7 /* AVChattingPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B14AE7020283E48006804B7 /* AVChattingPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,7 @@
 		9B14AE5B202805FA006804B7 /* AVChattingPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVChattingPlayerUITests.swift; sourceTree = "<group>"; };
 		9B14AE5D202805FA006804B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B14AE6C202819F4006804B7 /* SubtitlesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitlesParser.swift; sourceTree = "<group>"; };
+		9B14AE7020283E48006804B7 /* AVChattingPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVChattingPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				9B14AE6C202819F4006804B7 /* SubtitlesParser.swift */,
+				9B14AE7020283E48006804B7 /* AVChattingPlayerView.swift */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 			files = (
 				9B14AE6D202819F4006804B7 /* SubtitlesParser.swift in Sources */,
 				9B14AE3E202805FA006804B7 /* ViewController.swift in Sources */,
+				9B14AE7120283E48006804B7 /* AVChattingPlayerView.swift in Sources */,
 				9B14AE3C202805FA006804B7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B14AE6E202819F4006804B7 /* SubtitlesParser.swift in Sources */,
+				9B14AE7220283E48006804B7 /* AVChattingPlayerView.swift in Sources */,
 				9B14AE51202805FA006804B7 /* AVChattingPlayerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B14AE6F202819F4006804B7 /* SubtitlesParser.swift in Sources */,
+				9B14AE7320283E48006804B7 /* AVChattingPlayerView.swift in Sources */,
 				9B14AE5C202805FA006804B7 /* AVChattingPlayerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
