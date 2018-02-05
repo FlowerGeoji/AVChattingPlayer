@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "82aebfa6b998f0553d587925d3592af0"
+build_time: [1517801084, 685618000]
+inputs:
+  "/Users/flowergeoji/Documents/svm/appIos/AVChattingPlayer/AVChattingPlayer/ViewController.swift": [1517801082, 0]
+  "/Users/flowergeoji/Documents/svm/appIos/AVChattingPlayer/AVChattingPlayer/AppDelegate.swift": [1517801082, 0]
