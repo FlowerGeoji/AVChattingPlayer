@@ -25,7 +25,7 @@ class AVChattingPlayerTests: XCTestCase {
   func testInitialize() {
     // Test Initialization of AVPlayer & SubtitlesParser
     
-    // 1. Initialize SubtitlesParser
+    // == Initialize SubtitlesParser ====================================================================================================
     let filePathString = "https://asset.pufflive.me/subtitles/11313/1514970441/subtitles_ec58-2018-01-03/1514966117_M4w28A.vtt"
     guard let fileUrl: URL = URL.init(string: filePathString) else {
       return
@@ -90,16 +90,30 @@ WEBVTT
     
     XCTAssertEqual((parser3.parsedPayload?.count)!, 12, "Count of node should be equal to 12")
     
-    // 2. Test Searching Subtitles
+    // == Searching Subtitles ====================================================================================================
     XCTAssertEqual(parser3.searchSubtitles(at: 0.0).count, 0, "")
     XCTAssertEqual(parser3.searchSubtitles(at: 120.0).count, 4, "")
     XCTAssertEqual(parser3.searchSubtitles(at: 3600.0).count, 12, "")
+    
+    // == Reading Subtitles ====================================================================================================
+    XCTAssertEqual(parser3.readNextSubtitles(to: 5.0).count, 0)         // Read subtitles from 0 seconds to 5 seconds
+    XCTAssertEqual(parser3.readNextSubtitles(to: 10.0*60.0).count, 5)   // Read subtitles from 5 seconds to 10 minutes
+    XCTAssertEqual(parser3.readNextSubtitles(to: 20.0*60.0).count, 0)   // Read subtitles from 10 minutes to 20 minutes
+    XCTAssertEqual(parser3.readNextSubtitles(to: 30.0*60.0).count, 3)   // Read subtitles from 20 minutes to 30 minutes
+    XCTAssertEqual(parser3.readNextSubtitles(to: 50.0*60.0).count, 2)   // Read subtitles from 30 minutes to 50 minutes
+    XCTAssertEqual(parser3.readNextSubtitles(to: 60.0*60.0).count, 2)   // Read subtitles from 50 minutes to 60 minutes
+    XCTAssertEqual(parser3.readNextSubtitles(to: 80.0*60.0).count, 2)   // Read subtitles from 60 minutes to 80 minutes
   }
 
   func testPerformanceExample() {
   // This is an example of a performance test case.
     self.measure {
-      // Put the code you want to measure the time of here.
+      // Measure preformance of SubtitlesParser Initialization
+      let filePathString = "https://asset.pufflive.me/subtitles/11313/1514970441/subtitles_ec58-2018-01-03/1514966117_M4w28A.vtt"
+      guard let fileUrl: URL = URL.init(string: filePathString) else {
+        return
+      }
+      let _: SubtitlesParser = SubtitlesParser(file: fileUrl, encoding: .utf8)
     }
   }
 
