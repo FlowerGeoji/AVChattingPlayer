@@ -14,6 +14,12 @@
 		9B14AE46202805FA006804B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B14AE44202805FA006804B7 /* LaunchScreen.storyboard */; };
 		9B14AE51202805FA006804B7 /* AVChattingPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B14AE50202805FA006804B7 /* AVChattingPlayerTests.swift */; };
 		9B14AE5C202805FA006804B7 /* AVChattingPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B14AE5B202805FA006804B7 /* AVChattingPlayerUITests.swift */; };
+		9B14AE6D202819F4006804B7 /* SubtitlesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B14AE6C202819F4006804B7 /* SubtitlesParser.swift */; };
+		9B14AE6E202819F4006804B7 /* SubtitlesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B14AE6C202819F4006804B7 /* SubtitlesParser.swift */; };
+		9B14AE6F202819F4006804B7 /* SubtitlesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B14AE6C202819F4006804B7 /* SubtitlesParser.swift */; };
+		9B14AE7120283E48006804B7 /* AVChattingPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B14AE7020283E48006804B7 /* AVChattingPlayerView.swift */; };
+		9B14AE7220283E48006804B7 /* AVChattingPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B14AE7020283E48006804B7 /* AVChattingPlayerView.swift */; };
+		9B14AE7320283E48006804B7 /* AVChattingPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B14AE7020283E48006804B7 /* AVChattingPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,8 @@
 		9B14AE57202805FA006804B7 /* AVChattingPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVChattingPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B14AE5B202805FA006804B7 /* AVChattingPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVChattingPlayerUITests.swift; sourceTree = "<group>"; };
 		9B14AE5D202805FA006804B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B14AE6C202819F4006804B7 /* SubtitlesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitlesParser.swift; sourceTree = "<group>"; };
+		9B14AE7020283E48006804B7 /* AVChattingPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVChattingPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 		9B14AE3A202805FA006804B7 /* AVChattingPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				9B14AE6B202819DD006804B7 /* Player */,
 				9B14AE3B202805FA006804B7 /* AppDelegate.swift */,
 				9B14AE3D202805FA006804B7 /* ViewController.swift */,
 				9B14AE3F202805FA006804B7 /* Main.storyboard */,
@@ -123,6 +132,15 @@
 				9B14AE5D202805FA006804B7 /* Info.plist */,
 			);
 			path = AVChattingPlayerUITests;
+			sourceTree = "<group>";
+		};
+		9B14AE6B202819DD006804B7 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				9B14AE6C202819F4006804B7 /* SubtitlesParser.swift */,
+				9B14AE7020283E48006804B7 /* AVChattingPlayerView.swift */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B14AE6D202819F4006804B7 /* SubtitlesParser.swift in Sources */,
 				9B14AE3E202805FA006804B7 /* ViewController.swift in Sources */,
+				9B14AE7120283E48006804B7 /* AVChattingPlayerView.swift in Sources */,
 				9B14AE3C202805FA006804B7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +288,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B14AE6E202819F4006804B7 /* SubtitlesParser.swift in Sources */,
+				9B14AE7220283E48006804B7 /* AVChattingPlayerView.swift in Sources */,
 				9B14AE51202805FA006804B7 /* AVChattingPlayerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +298,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B14AE6F202819F4006804B7 /* SubtitlesParser.swift in Sources */,
+				9B14AE7320283E48006804B7 /* AVChattingPlayerView.swift in Sources */,
 				9B14AE5C202805FA006804B7 /* AVChattingPlayerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
